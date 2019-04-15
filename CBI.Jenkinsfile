@@ -17,6 +17,8 @@ spec:
   - name: xtext-buildenv
     image: docker.io/smoht/xtext-buildenv:0.7
     tty: true
+    securityContext:
+      runAsUser: 10002
     volumeMounts:
     - name: settings-xml
       mountPath: /home/jenkins/.m2/settings.xml
