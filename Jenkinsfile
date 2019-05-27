@@ -6,6 +6,10 @@ pipeline {
     disableConcurrentBuilds()
     timeout(time: 30, unit: 'MINUTES')
   }
+
+  triggers {
+    upstream(upstreamProjects: 'xtext-extras/milestone_2.18.0.M3', threshold: hudson.model.Result.SUCCESS)
+  }
   
   stages {
     stage('Checkout') {
