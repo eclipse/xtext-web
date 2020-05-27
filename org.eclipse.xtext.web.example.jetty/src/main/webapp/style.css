@@ -68,7 +68,7 @@ h3 {
 	margin: 20px;
 }
 
-.xtext-editor {
+.xtext-editor, #xtext-ace-editor, #xtext-codemirror-editor {
 	display: block;
 	position: absolute;
 	top: 0;
