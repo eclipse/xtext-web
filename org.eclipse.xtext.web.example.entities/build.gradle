@@ -1,8 +1,8 @@
 apply from: "${rootDir}/gradle/eclipse-project-layout.gradle"
 
 dependencies {
-	compile "org.eclipse.xtext:org.eclipse.xtext.xbase:$versions.xtext"
-	mwe2Compile "org.eclipse.xtext:org.eclipse.xtext.xtext.generator:$versions.xtext"
+	api "org.eclipse.xtext:org.eclipse.xtext.xbase:$versions.xtext"
+	mwe2Implementation "org.eclipse.xtext:org.eclipse.xtext.xtext.generator:$versions.xtext"
 }
 
 sourceSets.mwe2.java.srcDir 'generator'
