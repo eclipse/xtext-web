@@ -57,7 +57,7 @@ task jettyRun(type:JavaExec) {
 tasks.eclipse.dependsOn(unpackOrion)
 tasks.war.dependsOn(unpackOrion)
 
-uploadArchives.enabled = false
+// uploadArchives.enabled = false //TODO replace with what?
 
 task zipTestFiles(type: Zip) {
 	from('test-files') {

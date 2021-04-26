@@ -20,7 +20,7 @@ if (name.contains('example')) {
 		enabled = false
 	}
 	javadocJar.enabled = false
-	uploadArchives.enabled = false
+	//uploadArchives.enabled = false //TODO replace with what?
 } else {
 	artifacts.archives javadocJar
 }
