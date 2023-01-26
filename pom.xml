@@ -193,6 +193,10 @@
 					<url>${JENKINS_URL}/job/xtext-lib/job/${upstreamBranch}/lastStableBuild/artifact/build/maven-repository/</url>
 				</repository>
 				<repository>
+					<id>xtext-core-from-jenkins</id>
+					<url>${JENKINS_URL}/job/xtext-core/job/${upstreamBranch}/lastStableBuild/artifact/build/maven-repository/</url>
+				</repository>
+				<repository>
 					<id>xtext-extras-from-jenkins</id>
 					<url>${JENKINS_URL}/job/xtext-extras/job/${upstreamBranch}/lastStableBuild/artifact/build/maven-repository/</url>
 				</repository>
