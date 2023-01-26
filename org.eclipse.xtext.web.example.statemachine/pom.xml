@@ -31,4 +31,55 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>add-sources</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src</source>
+								<source>src-gen</source>
+								<source>generator</source>
+							</sources>
+						</configuration>
+					</execution>
+					<execution>
+						<!-- Tests need files like
+							/org.eclipse.xtext.common.types.tests/tests/org/eclipse/xtext/common/types/testSetups/testData.jar
+							and to Xtext files like .xtextbin
+							to be on the classpath; but they are not automatically copied in the target
+							folder by default by the maven-compiler-plugin:
+							we must specify them as resources so that maven-resources-plugin will copy them.
+							Otherwise, there will be test failure errors of the shape:
+							"1) [Guice/ErrorInjectingConstructor]:
+							WrappedException: ClasspathUriResolutionException:
+							FileNotFoundOnClasspathException:
+							Couldn't find resource on classpath.
+							URI was 'classpath:/org/eclipse/xtext/web/example/statemachine/Statemachine.xmi'" -->
+						<id>add-resources</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>add-resource</goal>
+						</goals>
+						<configuration>
+							<resources>
+								<resource>
+									<directory>src-gen</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
