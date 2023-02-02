@@ -17,5 +17,6 @@
 		<module>../org.eclipse.xtext.xbase.web</module>
 		<module>../org.eclipse.xtext.web.example.entities</module>
 		<module>../org.eclipse.xtext.web.example.entities.ide</module>
+		<module>../org.eclipse.xtext.web.servlet</module>
 	</modules>
 </project>
