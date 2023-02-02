@@ -35,3 +35,4 @@ jobs:
 
       - name: 'Build and test'
         run: mvn -PuseJenkinsSnapshots clean verify
+        working-directory: org.eclipse.xtext.maven.releng
