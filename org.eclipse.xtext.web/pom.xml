@@ -12,10 +12,6 @@
 	<description>API for integrating Xtext editors in web pages.</description>
 
 	<dependencies>
-		<!--
-		TODO: update it
-		The dev BOM should be in the same Git repository of this one
-		-->
 		<dependency>
 			<groupId>org.eclipse.xtext</groupId>
 			<artifactId>org.eclipse.xtext.ide</artifactId>
