@@ -14,5 +14,8 @@
 		<module>../org.eclipse.xtext.web</module>
 		<module>../org.eclipse.xtext.web.example.statemachine</module>
 		<module>../org.eclipse.xtext.web.example.statemachine.ide</module>
+		<module>../org.eclipse.xtext.xbase.web</module>
+		<module>../org.eclipse.xtext.web.example.entities</module>
+		<module>../org.eclipse.xtext.web.example.entities.ide</module>
 	</modules>
 </project>
