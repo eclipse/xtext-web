@@ -18,5 +18,6 @@
 		<module>../org.eclipse.xtext.web.example.entities</module>
 		<module>../org.eclipse.xtext.web.example.entities.ide</module>
 		<module>../org.eclipse.xtext.web.servlet</module>
+		<module>../org.eclipse.xtext.web.example.jetty</module>
 	</modules>
 </project>
