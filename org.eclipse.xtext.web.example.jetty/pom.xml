@@ -84,14 +84,14 @@
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>add-test-sources</id>
+						<id>add-sources</id>
 						<phase>initialize</phase>
 						<goals>
-							<goal>add-test-source</goal>
+							<goal>add-source</goal>
 						</goals>
 						<configuration>
 							<sources>
-								<source>src/test/xtext-gen</source>
+								<source>src/main/xtext-gen</source>
 							</sources>
 						</configuration>
 					</execution>
