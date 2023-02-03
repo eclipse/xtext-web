@@ -120,6 +120,7 @@
 						<configuration>
 							<url><![CDATA[https://www.eclipse.org/downloads/download.php?file=/orion/drops/R-17.0-201801111044/built-codeEdit.zip&mirror_id=1]]></url>
 							<toFile>${project.build.directory}/built-codeEdit.zip</toFile>
+							<skipIfExists>true</skipIfExists>
 						</configuration>
 					</execution>
 				</executions>
@@ -142,7 +143,26 @@
 							</target>
 						</configuration>
 					</execution>
+					<execution>
+						<id>zip-test-files</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<zip
+									destfile="${project.build.directory}/libs/test-files.zip"
+									basedir="test-files"/>
+							</target>
+						</configuration>
+					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>11.0.13</version>
 			</plugin>
 		</plugins>
 	</build>
