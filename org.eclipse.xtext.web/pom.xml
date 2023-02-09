@@ -77,7 +77,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.outputDirectory}</outputDirectory>
+							<outputDirectory>${project.build.outputDirectory}/META-INF/resources/xtext/${project.version}</outputDirectory>
 							<resources>
 								<resource>
 									<directory>build/opt-resources</directory>
