@@ -7,6 +7,7 @@ mvn \
   -f org.eclipse.xtext.maven.releng \
   clean deploy \
   -P useJenkinsSnapshots \
+  -P javadoc \
   --batch-mode \
   --update-snapshots \
   -Dmaven.repo.local=.m2/repository \
