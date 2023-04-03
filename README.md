@@ -1,5 +1,11 @@
 # Web Editor Support For The Xtext Framework
 
+## Notice
+
+The content of this repository (`xtext-xtend`) has been moved to the [Xtext Monorepo](https://github.com/eclipse/xtext/). Please refer to that repository to find the code, create issues or file pull requests.
+
+## About
+
 This repository contains the [web editor support for Xtext](https://www.eclipse.org/Xtext/documentation/330_web_support.html).
 
 ## How To Build
