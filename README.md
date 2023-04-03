@@ -2,7 +2,7 @@
 
 ## Notice
 
-The content of this repository (`xtext-xtend`) has been moved to the [Xtext Monorepo](https://github.com/eclipse/xtext/). Please refer to that repository to find the code, create issues or file pull requests.
+The content of this repository (`xtext-web`) has been moved to the [Xtext Monorepo](https://github.com/eclipse/xtext/). Please refer to that repository to find the code, create issues or file pull requests.
 
 ## About
 
